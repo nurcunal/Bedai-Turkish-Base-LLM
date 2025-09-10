@@ -205,3 +205,31 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# LLM Training Files
+# Model checkpoints and large binary files
+*.pth
+*.pt
+*.pkl
+*.h5
+*.hdf5
+*.bin
+*.safetensors
+
+# Large dataset files (exclude from git to avoid size limits)
+fineweb_turkish_dataset/fineweb_turkish_processed.txt
+fineweb_turkish_dataset/fineweb_turkish_sample.txt
+fineweb_turkish_dataset/*.txt
+
+# Training logs and temporary files
+training_*.log
+*.tmp
+*.temp
+logs/
+wandb/
+tensorboard/
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
