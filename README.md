@@ -1,8 +1,8 @@
-# 🇹🇷 Turkish GPT Model (163M Parameters)
+# Turkish GPT Model (163M Parameters)
 
 A Turkish language GPT-2 model trained from scratch on Turkish text data. This model can understand and generate Turkish text, making it suitable for various Turkish NLP tasks.
 
-## 📋 Model Information
+## Model Information
 
 - **Model Size**: 163M parameters
 - **Architecture**: GPT-2 style transformer with 12 layers, 896 embedding dimensions, 14 attention heads
@@ -11,14 +11,14 @@ A Turkish language GPT-2 model trained from scratch on Turkish text data. This m
 - **Training Data**: 14.5M tokens from Turkish web text
 - **License**: MIT
 
-## 🎯 Key Features
+## Key Features
 
 - **Turkish Language Support**: Fully trained on Turkish text with proper handling of Turkish characters (ı, ü, ş, ğ, etc.)
 - **Instruction Fine-tuning Ready**: Can be fine-tuned for chatbot and instruction-following tasks
 - **VRAM Optimized**: Designed to run efficiently within 32GB VRAM constraints
 - **Production Ready**: Includes inference scripts and deployment utilities
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -51,7 +51,7 @@ response = chatbot.generate_response("Türkiye'nin başkenti neresidir?")
 print(response)  # Output: "Türkiye'nin başkenti Ankara'dır."
 ```
 
-## 📊 Training Details
+## Training Details
 
 ### Dataset
 - **Source**: FineWeb Turkish dataset
@@ -72,7 +72,7 @@ print(response)  # Output: "Türkiye'nin başkenti Ankara'dır."
 - **RAM**: 16GB+
 - **Storage**: 2GB for model weights
 
-## 📁 File Structure
+## File Structure
 
 ```
 ├── pretrain_turkish_gpt_163m.py          # Main pretraining script
@@ -89,7 +89,7 @@ print(response)  # Output: "Türkiye'nin başkenti Ankara'dır."
 └── README.md                            # This file
 ```
 
-## 🏆 Model Performance
+## Model Performance
 
 ### Pretraining Results
 - **Final Loss**: ~2.1
@@ -113,7 +113,7 @@ Input: "Türk kahvesi nasıl hazırlanır?"
 Output: "Türk kahvesi ince çekilmiş kahve, su ve şeker ile hazırlanır..."
 ```
 
-## 🔧 Technical Implementation
+## Technical Implementation
 
 ### Architecture Details
 ```python
@@ -142,7 +142,7 @@ config = {
 4. **Checkpointing**: Regular model saving
 5. **Evaluation**: Sample generation during training
 
-## 🌟 Usage Examples
+## Usage Examples
 
 ### Basic Text Generation
 ```python
@@ -170,7 +170,7 @@ tokenizer = tiktoken.get_encoding("gpt2")
 # ... inference code ...
 ```
 
-## 📈 Future Improvements
+## Future Improvements
 
 - [ ] **Larger Context Window**: Extend to 1024+ tokens
 - [ ] **Instruction Tuning**: Enhanced conversational abilities
@@ -179,7 +179,7 @@ tokenizer = tiktoken.get_encoding("gpt2")
 - [ ] **Turkish Benchmarks**: Evaluate on Turkish NLP datasets
 - [ ] **Streaming Inference**: Real-time text generation
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to:
 - Report bugs and issues
@@ -187,18 +187,33 @@ Contributions are welcome! Please feel free to:
 - Submit pull requests
 - Share Turkish NLP datasets
 
-## 📄 License
+## Citation
+
+If you use this model or code in your research, please cite:
+
+```bibtex
+@misc{bedai-turkish-gpt-163m,
+  title={Turkish GPT Model (163M Parameters)},
+  author={Nurcunal, Bedai},
+  year={2025},
+  publisher={GitHub},
+  url={https://github.com/nurcunal/Bedai-Turkish-Base-LLM},
+  note={Turkish language GPT-2 model trained from scratch}
+}
+```
+
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Dataset**: FineWeb Turkish dataset from Hugging Face
-- **Architecture**: Based on GPT-2 paper and implementation
+- **Architecture**: Based on GPT-2 paper (Radford et al., 2019) and implementation from "Build a Large Language Model (From Scratch)" by Sebastian Raschka
 - **Training**: Optimized for Apple Silicon and NVIDIA GPUs
 - **Community**: Turkish NLP research community
 
-## 📞 Contact
+## Contact
 
 For questions or collaborations:
 - **GitHub**: https://github.com/nurcunal/Bedai-Turkish-Base-LLM
@@ -206,7 +221,7 @@ For questions or collaborations:
 
 ---
 
-## 🎉 Model Access
+## Model Access
 
 This model may be accessed at: **https://huggingface.co/nurcunal/Turkish-163M-14.5M**
 
@@ -214,4 +229,4 @@ This model may be accessed at: **https://huggingface.co/nurcunal/Turkish-163M-14
 
 ---
 
-⭐ **Star this repository** if you find it useful for your Turkish NLP projects!
+**Star this repository** if you find it useful for your Turkish NLP projects!
